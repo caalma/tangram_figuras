@@ -36,12 +36,25 @@ function load_figure(){
 			G.menu.val(G.n);
 
 			img.css('opacity','0');
+			loading(true);
+
 			img.html(obj);
 			G.svg = document.getElementById("figure");
 			G.svg.addEventListener("load", function () {
+						loading(false);
 						img.css('opacity','1');
 						unsolve(G.svg);
       }, false);
+}
+
+function loading(show_status){
+	let c = 'active';
+	if(G.loading == undefined){ G.loading = $('#loading'); }
+	if(show_status){
+		G.loading.addClass(c);
+	}else{
+		G.loading.removeClass(c);
+	}
 }
 
 function menu_figures_list(){

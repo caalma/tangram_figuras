@@ -2,7 +2,6 @@
     font-family:sans-serif;
     color:#333;
 }
-
 body {
     padding:10px;
     margin:0;
@@ -10,35 +9,25 @@ body {
     background:#bbb;
 }
 body.locked { overflow:hidden; }
-
 #exit {
     position:fixed;
     bottom:0;
     left:0;
     cursor:pointer;
 }
-
 #title {
     font-weight:bold;
     margin-right:10px;
     padding:10px 0;
     display:inline-block;
-
 }
-#image {
-    padding:10px;
-}
+#image { padding:10px; }
 #figure {
     width:100%;
     max-width:550px;
 }
-
-header {
-    padding:20px;
-}
-nav {
-    display:inline-block;
-}
+header { padding:20px; }
+nav { display:inline-block; }
 nav button {
     background:#000;
     color:#fff;
@@ -58,7 +47,6 @@ nav button img {
     display:block;
     width:100%;
 }
-
 button#prev{
     border-top-right-radius:0;
     border-bottom-right-radius:0;
@@ -67,15 +55,12 @@ button#next{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-
 nav button:hover {
     background:#fff;
-
 }
 button#toggle_solve {
     margin-left:10px;
 }
-
 nav select {
     background:#000;
     color:#fff;
@@ -90,10 +75,7 @@ nav select {
     vertical-align:middle;
     margin:0;
 }
-nav select option {
-    color:#fff;
-}
-
+nav select option { color:#fff; }
 a.github_repositorio {
     position:fixed;
     bottom:5px;
@@ -108,6 +90,21 @@ a.github_repositorio {
     height:30px;
     background-color:transparent;
 }
-a.github_repositorio:hover {
-    opacity:1;
+a.github_repositorio:hover { opacity:1; }
+#loading {
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:60px;
+    height:60px;
+    margin-top:-30px;
+    margin-left:-30px;
+    animation:spinner 2s linear infinite;
 }
+#loading img {
+    display:block;
+    width:100%;
+}
+#loading.active { display:block; }
+@keyframes spinner { to { transform:rotate(360deg); } }
