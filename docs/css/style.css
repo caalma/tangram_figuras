@@ -1,0 +1,109 @@
+* {
+    font-family:sans-serif;
+    color:#333;
+}
+
+body {
+    padding:10px;
+    margin:0;
+    text-align:center;
+    background:#ddd;
+}
+body.locked { overflow:hidden; }
+
+#exit {
+    position:fixed;
+    bottom:0;
+    left:0;
+    cursor:pointer;
+}
+
+#title {
+    font-weight:bold;
+    margin-right:10px;
+    padding:10px 0;
+    display:inline-block;
+
+}
+#image {
+    padding:10px;
+}
+#figure {
+    width:100%;
+    max-width:550px;
+}
+
+header {
+    padding:20px;
+}
+nav {
+    display:inline-block;
+}
+nav button {
+    background:#000;
+    color:#fff;
+    padding:5px;
+    border-radius:10px;
+    border:1px solid #000;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:1.2em;
+    line-height:1.2em;
+    width:2em;
+    height:40px;
+    vertical-align:middle;
+    margin:0;
+}
+
+button#prev{
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+button#next{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+nav button:hover {
+    background:#fff;
+    color:#000;
+}
+button#toggle_solve {
+    margin-left:10px;
+}
+
+nav select {
+    background:#000;
+    color:#fff;
+    padding:5px;
+    border:1px solid #000;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:1em;
+    line-height:1.2em;
+    width:auto;
+    height:40px;
+    vertical-align:middle;
+    margin:0;
+}
+nav select option {
+    color:#fff;
+}
+
+a.github_repositorio {
+    position:fixed;
+    bottom:5px;
+    left:5px;
+    opacity:.6;
+    overflow:hidden;
+    background-image:url(../img/github_face.svg);
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:30px;
+    height:30px;
+    background-color:transparent;
+}
+a.github_repositorio:hover {
+    opacity:1;
+}
