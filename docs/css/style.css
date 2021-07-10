@@ -7,7 +7,7 @@ body {
     padding:10px;
     margin:0;
     text-align:center;
-    background:#ddd;
+    background:#bbb;
 }
 body.locked { overflow:hidden; }
 
@@ -44,7 +44,7 @@ nav button {
     color:#fff;
     padding:5px;
     border-radius:10px;
-    border:1px solid #000;
+    border:2px solid #000;
     cursor:pointer;
     font-weight:bold;
     font-size:1.2em;
@@ -53,6 +53,10 @@ nav button {
     height:40px;
     vertical-align:middle;
     margin:0;
+}
+nav button img {
+    display:block;
+    width:100%;
 }
 
 button#prev{
@@ -66,7 +70,7 @@ button#next{
 
 nav button:hover {
     background:#fff;
-    color:#000;
+
 }
 button#toggle_solve {
     margin-left:10px;
@@ -75,7 +79,7 @@ button#toggle_solve {
 nav select {
     background:#000;
     color:#fff;
-    padding:5px;
+    padding:5px 10px;
     border:1px solid #000;
     cursor:pointer;
     font-weight:bold;
