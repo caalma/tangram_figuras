@@ -41,7 +41,7 @@ nav button {
     width:2em;
     height:40px;
     vertical-align:middle;
-    margin:0;
+    margin:10px 0;
 }
 nav button img {
     display:block;
@@ -58,14 +58,12 @@ button#next{
 nav button:hover {
     background:#fff;
 }
-button#toggle_solve {
-    margin-left:10px;
-}
 nav select {
     background:#000;
     color:#fff;
     padding:5px 10px;
     border:1px solid #000;
+    border-radius:10px;
     cursor:pointer;
     font-weight:bold;
     font-size:1em;
